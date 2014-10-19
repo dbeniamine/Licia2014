@@ -267,9 +267,7 @@ Guillaume Huard \and Bruno Raffin}
     \end{itemize}
 \end{frame}
 
-\newsection{Analysis}
-
-\newsubsection{Existing tools}
+\newsection{Existing tools}
 
 \begin{frame}{Profiling tools}
     \begin{itemize}
@@ -320,7 +318,7 @@ Guillaume Huard \and Bruno Raffin}
     \end{block}
 \end{frame}
 
-\newsubsection{Current work}
+\newsection{Memory analysis}
 
 \begin{frame}{Objectives}
     \begin{itemize}
@@ -387,11 +385,10 @@ Guillaume Huard \and Bruno Raffin}
                     \dots)
                 \item Avoid it using a kernel module as in \cite{Cruz12Using}
             \end{itemize}
-        \item Lot of data
+        \item Our analysis produce a lot of data
             \begin{itemize}
                 \item Can we use smarter merge methods ?
-                \item How can we analyse it ?
-                \item How can we visualize it ?
+                \item How can we improve the visualisation
             \end{itemize}
     \end{itemize}
 \end{frame}
@@ -407,9 +404,17 @@ Guillaume Huard \and Bruno Raffin}
 \bibliography{presentation}
 
 %========================= Backup slides =====================================
-%\newsection*{Hidden slides}
+\newHsection{Hidden slides}
 %put this line before each frame
-%\setcounter{framenumber}{\value{finalframe}}
+\setcounter{framenumber}{\value{finalframe}}
+
+\begin{frame}{Monothread  matrix multiplication with transposition}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.65\linewidth]{img/mat_naif_50_42_0_none_transpose.pdf}
+    \end{figure}
+\end{frame}
+
 
 %=============================================================================
 \end{document}
